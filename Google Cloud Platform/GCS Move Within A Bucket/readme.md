@@ -1,6 +1,6 @@
 ## Bash GCS Object Mover
 
-This repository contains a simple, yet powerful, Bash script for moving a single object between folders within the same Google Cloud Storage (GCS) bucket.
+This folder contains a simple, yet powerful, Bash script for moving a single object between folders within the same Google Cloud Storage (GCS) bucket.
 
 ---
 
