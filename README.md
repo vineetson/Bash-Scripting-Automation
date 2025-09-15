@@ -15,11 +15,11 @@ In cloud infrastructure, a well-placed script can save you significant time and 
 
 The scripts are organized by their function and purpose. Each directory contains a script and a detailed **`README.md`** file with instructions, prerequisites, and IAM permissions.
 
-* [Cloud Storage](https://www.google.com/search?q=https://github.com/your-username/your-repo/tree/main/Google%2520Cloud%2520Platform/Cloud%2520Storage)
+* [Cloud Storage](https://github.com/vineetson/Bash-Scripting-Automation/tree/master/Google%20Cloud%20Platform/Cloud%20Storage)
   * **`gcs-move-by-date.sh`** : A powerful script for  **automated data lifecycle management** . It efficiently moves objects between buckets based on their creation date, ideal for cost-saving archival strategies. It uses **`gsutil -m`** for highly efficient, parallelized transfers.
-* [GCS Move Within A Bucket](https://www.google.com/search?q=https://github.com/your-username/your-repo/tree/main/Google%2520Cloud%2520Platform/GCS%2520Move%2520Within%2520A%2520Bucket)
+* [GCS Move Within A Bucket](https://github.com/vineetson/Bash-Scripting-Automation/tree/master/Google%20Cloud%20Platform/GCS%20Move%20Within%20A%20Bucket)
   * **`gcs-move-within-a-bucket.sh`** : A versatile script for  **intra-bucket operations** . It provides a simple and reliable way to move a single object from one "folder" to another within the same GCS bucket. It leverages **`gsutil mv`** for an  **atomic, server-side rename** , which is the fastest way to move large files without re-copying data.
-* [GCS per file mover (sleep usecase)](https://www.google.com/search?q=https://github.com/your-username/your-repo/tree/main/Google%2520Cloud%2520Platform/GCS%2520per%2520file%2520mover%2520(sleep%2520usecase))
+* [GCS per file mover (sleep usecase)](https://github.com/vineetson/Bash-Scripting-Automation/tree/master/Google%20Cloud%20Platform/GCS%20per%20file%20mover%20(sleep%20usecase))
   * **`gcs-per-file-mover.sh`** : A specialized script for  **rate-limited data ingestion** . This is a mission-critical tool for data pipelines where the receiving system has strict API limits. It introduces a configurable sleep delay between each file transfer to ensure a controlled and reliable data flow.
 
 ---
