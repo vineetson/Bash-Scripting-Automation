@@ -1,6 +1,6 @@
 ## GCS Per-File Mover: A Mission-Critical Solution for Rate-Limited Workflows 🚀
 
-This repository contains a specialized Bash script designed for a common but critical challenge in cloud computing: **transferring files to a system with strict rate limits.** While traditional scripts focus on speed, this tool prioritizes control and reliability, making it a cornerstone for resilient data pipelines.
+This folder contains a specialized Bash script designed for a common but critical challenge in cloud computing: **transferring files to a system with strict rate limits.** While traditional scripts focus on speed, this tool prioritizes control and reliability, making it a cornerstone for resilient data pipelines.
 
 ### Why This Script is Indispensable for Large-Scale Scenarios
 
