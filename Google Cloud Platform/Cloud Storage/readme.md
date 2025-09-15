@@ -32,7 +32,7 @@ This **script** is a powerful example of how a small investment in automation ca
 
 ```
    git clone [https://github.com/your-username/your-repo.git](https://github.com/vineetson/Bash-Scripting-Automation.git)
-   cd Google Cloud Platform / Cloud Storage
+   cd Google Cloud Platform/Cloud Storage
 ```
 
 1. Edit the script:
