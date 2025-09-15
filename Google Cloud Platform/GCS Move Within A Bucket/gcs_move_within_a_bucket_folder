@@ -1,0 +1,57 @@
+#!/bin/bash
+
+# --- Configuration ---
+BUCKET_NAME="demo-poc-pay"
+SOURCE_FOLDER="raw/"
+DESTINATION_FOLDER="processed/"
+OBJECT_NAME="call-123457.txt"
+
+# --- Main Logic ---
+
+# Define log function for consistency
+log_info() {
+    echo "$(date '+%Y-%m-%d %H:%M:%S') - INFO - $1"
+}
+
+log_warning() {
+    echo "$(date '+%Y-%m-%d %H:%M:%S') - WARNING - $1" >&2
+}
+
+log_error() {
+    echo "$(date '+%Y-%m-%d %H:%M:%S') - ERROR - $1" >&2
+}
+
+# --- Pre-checks ---
+# Ensure gsutil is installed and authenticated
+if ! command -v gsutil &> /dev/null; then
+    log_error "gsutil could not be found. Please install Google Cloud SDK."
+    exit 1
+fi
+
+# Define full paths
+SOURCE_PATH="gs://${BUCKET_NAME}/${SOURCE_FOLDER}${OBJECT_NAME}"
+DESTINATION_PATH="gs://${BUCKET_NAME}/${DESTINATION_FOLDER}${OBJECT_NAME}"
+
+log_info "Starting object move process..."
+
+# Check if the source object exists
+if ! gsutil ls "${SOURCE_PATH}" &> /dev/null; then
+    log_warning "Object '${OBJECT_NAME}' not found in folder '${SOURCE_FOLDER}'. No action taken."
+    exit 0
+fi
+
+log_info "Attempting to move '${SOURCE_PATH}' to '${DESTINATION_PATH}'..."
+
+# Use gsutil mv to perform the move operation
+# This command is atomic and renames the object on the server.
+gsutil mv "${SOURCE_PATH}" "${DESTINATION_PATH}"
+
+# Check the exit code of the mv command
+if [ $? -eq 0 ]; then
+    log_info "Successfully moved '${SOURCE_PATH}' to '${DESTINATION_PATH}'."
+else
+    log_error "An error occurred while moving '${OBJECT_NAME}'."
+    exit 1
+fi
+
+log_info "Process completed."
