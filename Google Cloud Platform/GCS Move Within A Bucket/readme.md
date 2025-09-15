@@ -45,7 +45,7 @@ This script is a highly optimized, single-purpose utility, perfect for automated
 
 ---
 
-### 🔒 IAM Permissions for Production
+### 🔒 IAM Permissions Requirements
 
 For a service account to successfully run this script, it needs the following IAM permissions on the GCS bucket:
 
