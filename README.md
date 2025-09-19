@@ -14,13 +14,19 @@ In cloud infrastructure, a well-placed script can save you significant time and 
 ### **📁 The Scripts**
 
 The scripts are organized by their function and purpose. Each directory contains a script and a detailed **`README.md`** file with instructions, prerequisites, and IAM permissions.
+<br>
 
-* [Cloud Storage](https://github.com/vineetson/Bash-Scripting-Automation/tree/master/Google%20Cloud%20Platform/Cloud%20Storage)
-  * **`gcs-move-by-date.sh`** : A powerful script for  **automated data lifecycle management** . It efficiently moves objects between buckets based on their creation date, ideal for cost-saving archival strategies. It uses **`gsutil -m`** for highly efficient, parallelized transfers.
-* [GCS Move Within A Bucket](https://github.com/vineetson/Bash-Scripting-Automation/tree/master/Google%20Cloud%20Platform/GCS%20Move%20Within%20A%20Bucket)
-  * **`gcs-move-within-a-bucket.sh`** : A versatile script for  **intra-bucket operations** . It provides a simple and reliable way to move a single object from one "folder" to another within the same GCS bucket. It leverages **`gsutil mv`** for an  **atomic, server-side rename** , which is the fastest way to move large files without re-copying data.
-* [GCS per file mover (sleep usecase)](https://github.com/vineetson/Bash-Scripting-Automation/tree/master/Google%20Cloud%20Platform/GCS%20per%20file%20mover%20(sleep%20usecase))
-  * **`gcs-per-file-mover.sh`** : A specialized script for  **rate-limited data ingestion** . This is a mission-critical tool for data pipelines where the receiving system has strict API limits. It introduces a configurable sleep delay between each file transfer to ensure a controlled and reliable data flow.
+- **Google_Cloud_Platform**
+    - **[Dialogflow_Agent_Creation](https://github.com/vineetson/Bash-Scripting-Automation/tree/main/Google_Cloud_Platform/Dialogflow_Agent_Creation)**
+        - Automate the provisioning of a new Dialogflow agent, a crucial step for conversational AI projects.
+    - **[GCS_Bucket_Creation](https://github.com/vineetson/Bash-Scripting-Automation/tree/main/Google_Cloud_Platform/GCS_Bucket_Creation)**
+        - An idempotent solution to automatically create a Google Cloud Storage bucket via a CI/CD pipeline.
+    - **[GCS_Move_Objects_By_Date](https://github.com/vineetson/Bash-Scripting-Automation/tree/main/Google_Cloud_Platform/GCS_Move_Objects_By_Date)**
+        - A powerful script for **automated data lifecycle management**, ideal for archiving data to save costs.
+    - **[GCS_Move_Within_Same_Bucket](https://github.com/vineetson/Bash-Scripting-Automation/tree/main/Google_Cloud_Platform/GCS_Move_Within_Same_Bucket)**
+        - A script that provides a simple and reliable way to move a single object from one "folder" to another within the same GCS bucket.
+    - **[GCS_Per_File_Mover_Sleep_Usecase](https://github.com/vineetson/Bash-Scripting-Automation/tree/main/Google_Cloud_Platform/GCS_Per_File_Mover_Sleep_Usecase)**
+        - A specialized tool for **rate-limited data ingestion**. It introduces a configurable sleep delay between file transfers to ensure a controlled and reliable data flow.
 
 ---
 
