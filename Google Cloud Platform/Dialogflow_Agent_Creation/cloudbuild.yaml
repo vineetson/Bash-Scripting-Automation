@@ -1,0 +1,20 @@
+steps:
+# Step 1: Make the script executable
+- name: 'gcr.io/cloud-builders/gcloud'
+  id: 'make-script-executable'
+  entrypoint: 'bash'
+  args:
+    - '-c'
+    - 'chmod +x "./Google\ Cloud\ Platform/Dialogflow_Agent_Creation/dialogflow.sh"'
+
+# Step 2: Execute the shell script
+- name: 'gcr.io/cloud-builders/gcloud'
+  id: 'execute-df-script'
+  entrypoint: 'bash'
+  args:
+    - '-c'
+    - './Google\ Cloud\ Platform/Dialogflow_Agent_Creation/dialogflow.sh'
+
+# Cloud Build's built-in substitution variables.
+substitutions:
+  _PROJECT_ID: $PROJECT_ID
