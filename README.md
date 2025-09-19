@@ -17,15 +17,15 @@ The scripts are organized by their function and purpose. Each directory contains
 <br>
 
 - **Google_Cloud_Platform**
-    - **[Dialogflow_Agent_Creation](https://github.com/vineetson/Bash-Scripting-Automation/tree/main/Google_Cloud_Platform/Dialogflow_Agent_Creation)**
+    - **[Dialogflow_Agent_Creation](https://github.com/vineetson/Bash-Scripting-Automation/tree/master/Google_Cloud_Platform/Dialogflow_Agent_Creation)**
         - Automate the provisioning of a new Dialogflow agent, a crucial step for conversational AI projects.
-    - **[GCS_Bucket_Creation](https://github.com/vineetson/Bash-Scripting-Automation/tree/main/Google_Cloud_Platform/GCS_Bucket_Creation)**
+    - **[GCS_Bucket_Creation](https://github.com/vineetson/Bash-Scripting-Automation/tree/master/Google_Cloud_Platform/GCS_Bucket_Creation)**
         - An idempotent solution to automatically create a Google Cloud Storage bucket via a CI/CD pipeline.
-    - **[GCS_Move_Objects_By_Date](https://github.com/vineetson/Bash-Scripting-Automation/tree/main/Google_Cloud_Platform/GCS_Move_Objects_By_Date)**
+    - **[GCS_Move_Objects_By_Date](https://github.com/vineetson/Bash-Scripting-Automation/tree/master/Google_Cloud_Platform/GCS_Move_Objects_By_Date)**
         - A powerful script for **automated data lifecycle management**, ideal for archiving data to save costs.
-    - **[GCS_Move_Within_Same_Bucket](https://github.com/vineetson/Bash-Scripting-Automation/tree/main/Google_Cloud_Platform/GCS_Move_Within_Same_Bucket)**
+    - **[GCS_Move_Within_Same_Bucket](https://github.com/vineetson/Bash-Scripting-Automation/tree/master/Google_Cloud_Platform/GCS_Move_Within_Same_Bucket)**
         - A script that provides a simple and reliable way to move a single object from one "folder" to another within the same GCS bucket.
-    - **[GCS_Per_File_Mover_Sleep_Usecase](https://github.com/vineetson/Bash-Scripting-Automation/tree/main/Google_Cloud_Platform/GCS_Per_File_Mover_Sleep_Usecase)**
+    - **[GCS_Per_File_Mover_Sleep_Usecase](https://github.com/vineetson/Bash-Scripting-Automation/tree/master/Google_Cloud_Platform/GCS_Per_File_Mover_Sleep_Usecase)**
         - A specialized tool for **rate-limited data ingestion**. It introduces a configurable sleep delay between file transfers to ensure a controlled and reliable data flow.
 
 ---
