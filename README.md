@@ -29,4 +29,4 @@ While Terraform is the industry standard for large-scale Infrastructure as Code 
 
 This repository contains a dedicated folder for all GCP-related automation. You'll find scripts for provisioning resources, managing data lifecycles, and more.
 
-**[Explore the GCP automation toolkit here.](https://github.com/vineetson/Shell-Scripting-Automation/tree/master/Google_Cloud_Platform)**
+ - **[Explore the GCP automation toolkit here.](https://github.com/vineetson/Shell-Scripting-Automation/tree/master/Google_Cloud_Platform)**
