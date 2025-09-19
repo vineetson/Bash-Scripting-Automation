@@ -32,6 +32,6 @@ The scripts are organized by their function and purpose. Each directory contains
 
 ### **🔒 IAM & Security**
 
-Each script's **`README.md`** provides a detailed breakdown of the  **minimum required IAM permissions** . For all production workloads, we strongly recommend creating a **custom IAM role** to follow the principle of least privilege, thereby minimizing your security footprint.
+Each script's **`README.md`** provides a detailed breakdown of the  **minimum required IAM permissions** . For all production workloads, it is strongly recommended to create a **custom IAM role** to follow the principle of least privilege, thereby minimizing your security footprint.
 
 Explore the scripts and start automating your GCP environment today!
