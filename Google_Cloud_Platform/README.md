@@ -27,7 +27,7 @@ The scripts are organized by their function and purpose. Each directory contains
         - A script that provides a simple and reliable way to move a single object from one "folder" to another within the same GCS bucket.
     - **[GCS_Per_File_Mover_Sleep_Usecase](https://github.com/vineetson/Bash-Scripting-Automation/tree/master/Google_Cloud_Platform/GCS_Per_File_Mover_Sleep_Usecase)**
         - A specialized tool for **rate-limited data ingestion**. It introduces a configurable sleep delay between file transfers to ensure a controlled and reliable data flow.
-        - **[Identity_and_Access_Management](https://github.com/vineetson/Shell-Scripting-Automation/tree/master/Google_Cloud_Platform/Identity_and_Access_Management)**
+    - **[Identity_and_Access_Management](https://github.com/vineetson/Shell-Scripting-Automation/tree/master/Google_Cloud_Platform/Identity_and_Access_Management)**
         - A **production-ready, idempotent solution** for managing IAM roles in GCP. It automates granting or revoking project and service account permissions, making it an essential tool for standardizing access in CI/CD pipelines.
 
 ---
