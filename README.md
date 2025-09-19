@@ -1,5 +1,5 @@
 
-# 🚀 **GCP Automation with Bash**
+# 🚀 **GCP Automation with Shell/Bash**
 
 This repository is your essential toolkit for automating common, yet mission-critical, tasks across Google Cloud Platform (GCP). It contains a collection of robust, production-ready Bash scripts designed to streamline your workflows, optimize costs, and enhance the reliability of your data pipelines.
 
