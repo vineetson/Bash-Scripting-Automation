@@ -5,7 +5,7 @@ steps:
   entrypoint: 'bash'
   args:
     - '-c'
-    - 'chmod +x "./Google\ Cloud\ Platform/Dialogflow_Agent_Creation/dialogflow.sh"'
+    - 'chmod +x "./Google_Cloud_Platform/Dialogflow_Agent_Creation/dialogflow.sh"'
 
 # Step 2: Execute the shell script
 - name: 'gcr.io/cloud-builders/gcloud'
@@ -13,7 +13,7 @@ steps:
   entrypoint: 'bash'
   args:
     - '-c'
-    - './Google\ Cloud\ Platform/Dialogflow_Agent_Creation/dialogflow.sh'
+    - './Google_Cloud_Platform/Dialogflow_Agent_Creation/dialogflow.sh'
 
 # Cloud Build's built-in substitution variables.
 substitutions:
