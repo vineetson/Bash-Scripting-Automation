@@ -1,0 +1,22 @@
+steps:
+# Step 1: Make the script executable
+- name: 'gcr.io/cloud-builders/gcloud'
+  id: 'make-script-executable'
+  entrypoint: 'bash'
+  args:
+    - '-c'
+    - |
+      chmod +x ./Google\ Cloud\ Platform/GCS_Bucket_Creation/bucket.sh
+
+# Step 2: Execute the shell script
+- name: 'gcr.io/cloud-builders/gcloud'
+  id: 'execute-script'
+  entrypoint: 'bash'
+  args:
+    - '-c'
+    - |
+      ./Google\ Cloud\ Platform/GCS_Bucket_Creation/bucket.sh
+
+# Cloud Build's built-in substitution variables for the project ID.
+substitutions:
+  _PROJECT_ID: $PROJECT_ID
